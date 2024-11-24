@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlendDesign - Portfolio Filmów i Grafik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">BlendDesign</a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">O nas</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>BlendDesign</h1>
+            <p>Tworzymy wyjątkowe filmy i grafiki</p>
+            <a href="#portfolio" class="cta-button">Zobacz nasze prace</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Nasze Portfolio</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Wszystko</button>
+            <button class="filter-btn" data-filter="video">Filmy</button>
+            <button class="filter-btn" data-filter="graphics">Grafiki</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Video Projects -->
+            <div class="portfolio-item video" data-youtube-id="dQw4w9WgXcQ">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Projekt Video 1">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Dealereq</h3>
+                    <p>Montaż Filmu</p>
+                    <div class="portfolio-links">
+                        <a href="https://youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="watch-on-youtube">
+                            <i class="fab fa-youtube"></i> Zobacz na YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item video" data-youtube-id="LXb3EKWsInQ">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/LXb3EKWsInQ/maxresdefault.jpg" alt="Projekt Video 2">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Rapy</h3>
+                    <p>Montaż Filmu</p>
+                    <div class="portfolio-links">
+                        <a href="https://youtube.com/watch?v=LXb3EKWsInQ" target="_blank" class="watch-on-youtube">
+                            <i class="fab fa-youtube"></i> Zobacz na YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item video" data-youtube-id="jNQXAC9IVRw">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg" alt="Projekt Video 3">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Cpotworek</h3>
+                    <p>Montaż Filmu</p>
+                    <div class="portfolio-links">
+                        <a href="https://youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="watch-on-youtube">
+                            <i class="fab fa-youtube"></i> Zobacz na YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item video" data-youtube-id="M7FIvfx5J10">
+                <div class="thumbnail-container">
+                    <img src="https://img.youtube.com/vi/M7FIvfx5J10/maxresdefault.jpg" alt="Projekt Video 4">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Halucynek</h3>
+                    <p>Montaż Shortsa</p>
+                    <div class="portfolio-links">
+                        <a href="https://youtube.com/watch?v=M7FIvfx5J10" target="_blank" class="watch-on-youtube">
+                            <i class="fab fa-youtube"></i> Zobacz na YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="youtube-player"></div>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>O Nas</h2>
+            <p>BlendDesign to studio kreatywne specjalizujące się w produkcji filmowej i projektowaniu graficznym. Łączymy innowacyjne podejście z najnowszymi trendami, tworząc unikalne projekty dla naszych klientów.</p>
+            <div class="services">
+                <div class="service-item">
+                    <i class="fas fa-video"></i>
+                    <h3>Produkcja Filmowa</h3>
+                    <p>Profesjonalne strony www, grafiki montaz</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-palette"></i>
+                    <h3>Projektowanie Graficzne</h3>
+                    <p>Identyfikacja wizualna, logo, materiały marketingowe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Skontaktuj się z nami</h3>
+                <p><i class="fas fa-envelope"></i> blenddesign.pl</p>
+                <p><i class="fas fa-phone"></i>witkopo_ and _admx.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Warszawa, Polska</p>
+            </div>
+            <for
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">BlendDesign</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+            <p>&copy; 2024 BlendDesign. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
